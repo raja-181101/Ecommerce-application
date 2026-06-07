@@ -20,6 +20,7 @@ public class GlobalExceptionHandeler  {
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public Map<String, String> handleGeneral(Exception e){
+        e.printStackTrace();
         return Map.of("error", "Something went wrong");
     }
 

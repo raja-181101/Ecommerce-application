@@ -10,4 +10,7 @@ public class ProductDTO {
     public String productName;
     @Positive
     public Double productPrice;
+    @Positive
+    public int quantity;
+
 }
